@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prototipo de un Ascensor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Material+Icons" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+    html { scroll-behavior: smooth; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="material-icons text-blue-600">elevator</span>
+        <h1 class="text-2xl font-bold text-blue-700">Prototipo de un Ascensor</h1>
+      </div>
+      <nav class="space-x-4 hidden sm:flex">
+        <a href="#" onclick="showSection('dashboard')"><span class="material-icons text-blue-600">home</span>Inicio</a>
+        <a href="#" onclick="showSection('justificacion')"><span class="material-icons text-blue-600">info</span>Justificación</a>
+                <a href="#" onclick="showSection('objetivos')"><span class="material-icons text-blue-600">flag</span>Objetivos</a>
+        <a href="#" onclick="showSection('materiales')"><span class="material-icons text-blue-600">memory</span>Materiales</a>
+        <a href="#" onclick="showSection('conclusiones')"><span class="material-icons text-blue-600">check_circle</span>Conclusiones</a>
+        <a href="#" onclick="showSection('recomendaciones')"><span class="material-icons text-blue-600">thumb_up</span>Recomendaciones</a>
+      </nav>
+    </div>
+  </header>
+   <!-- Dashboard -->
+  <section id="dashboard" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-8">Explora el Proyecto</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-6 cursor-pointer" onclick="showSection('justificacion')">
+        <div class="flex items-center mb-2">
+          <span class="material-icons text-blue-600 mr-2">info</span>
+          <h3 class="text-xl">Justificación</h3>
+        </div>
+        <p>Razones y objetivos del proyecto.</p>
+      </div>
+    
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-6 cursor-pointer" onclick="showSection('objetivos')">
+        <div class="flex items-center mb-2">
+          <span class="material-icons text-blue-600 mr-2">flag</span>
+          <h3 class="text-xl">Objetivos</h3>
+        </div>
+        <p>Metas generales y específicas del proyecto.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-6 cursor-pointer" onclick="showSection('materiales')">
+        <div class="flex items-center mb-2">
+          <span class="material-icons text-blue-600 mr-2">memory</span>
+          <h3 class="text-xl">Materiales</h3>
+        </div>
+        <p>Lista y descripción de materiales utilizados.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-6 cursor-pointer" onclick="showSection('conclusiones')">
+        <div class="flex items-center mb-2">
+          <span class="material-icons text-blue-600 mr-2">check_circle</span>
+          <h3 class="text-xl">Conclusiones</h3>
+        </div>
+        <p>Principales aprendizajes y resultados obtenidos.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-6 cursor-pointer" onclick="showSection('recomendaciones')">
+        <div class="flex items-center mb-2">
+          <span class="material-icons text-blue-600 mr-2">thumb_up</span>
+          <h3 class="text-xl">Recomendaciones</h3>
+        </div>
+        <p>Sugerencias para mejoras futuras del proyecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Justificación -->
+  <section id="justificacion" class="hidden py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Justificación</h2>
+    <p class="text-center">
+<div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="C:\Users\brimi\Downloads\a.jpeg" alt="Prototipo Ascensor" class="mx-auto rounded-1 w-64 h-auto">
+          <h3 class="text-blue-800 font-bold mb-2">Pototipo Ascensor</h3>
+                 </div>
+      El proyecto "Prototipo de un Ascensor" tiene la finalidad en la Unidad Educativa Fiscal Simón Bolívar, en la concientización y accesibilidad sobre el uso y funcionamiento adecuado de los ascensores escolares, especialmente en lo que respecta a la seguridad, la empatía y el respeto hacia las personas con movilidad reducida y personas con discapacidad. Esta situación no solo puede generar inconvenientes para los estudiantes, docentes y personal administrativo, sino que también evidencia la ausencia de iniciativas educativas que promuevan una cultura inclusiva y de respeto a los derechos de todas las personas. Frente a esta problemática, se propone diseñar y construir un prototipo de ascensor con herramientas tecnológicas que permita sensibilizar a la comunidad educativa sobre su correcta utilización, funcionamiento y normas de seguridad. Este prototipo, además de simular de forma realista el funcionamiento de un ascensor, incluirá recursos hacia quienes más lo necesitan.
+    </p>
+    <div class="mt-6 text-center">
+      <button onclick="showSection('dashboard')" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700">
+        Volver al Inicio
+      </button>
+    </div>
+  </section>
+  <!-- Objetivos -->
+  <section id="objetivos" class="hidden py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Objetivos</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold text-blue-800">Objetivo General</h3>
+        <p>
+          Diseñar un prototipo de ascensor básico utilizando Arduino Uno, servomotores, luces LED y protoboard para representar sus sistemas mecánicos y eléctricos para que los estudiantes comprendan su funcionamiento, desarrollen habilidades técnicas y tecnológicas, y adquieran conocimientos prácticos en electricidad, mecánica y seguridad..
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold text-blue-800">Objetivos Específicos</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Diseñar la estructura física de un prototipo de ascensor educativo, considerando aspectos como tamaño, materiales y presentación, de forma que sea visualmente didáctico y fácil de comprender..</li>
+          <li>Desarrollar el ensamblaje de los componentes electrónicos y mecánicos básicos (como servomotor, LEDs, botones y protoboard) para representar el movimiento del ascensor y su señalización..</li>
+          <li>Implementar el sistema eléctrico y mecánico que integre todos los componentes seleccionados y permita el correcto funcionamiento del prototipo de ascensor, considerando conexiones, montaje y pruebas técnicas..</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-6 text-center">
+      <button onclick="showSection('dashboard')" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700">
+        Volver al Inicio
+      </button>
+    </div>
+  </section>
+ <!-- Materiales -->
+  <section id="materiales" class="hidden bg-gradient-to-r from-blue-200 to-cyan-100 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Materiales Electrónicos</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="C:\Users\brimi\OneDrive\Documents\salome\arduino.jpeg" alt="Arduino UNO" class="mx-auto rounded-md w-40 h-auto">
+          <h3 class="text-blue-800 font-bold mb-2">Arduino UNO</h3>
+          <p>Microcontrolador principal que gestiona las señales de entrada y salida, controlando el motor y los displays.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="C:\Users\brimi\OneDrive\Documents\salome\aaa.jpeg" alt="Motor Stepper" class="mx-auto rounded-md w-40 h-auto">
+          <h3 class="text-blue-800 font-bold mb-2">Motor Stepper</h3>
+          <p>Simula el movimiento vertical de la cabina, controlando con precisión su desplazamiento entre pisos.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="C:\Users\brimi\OneDrive\Documents\salome\driver.jpeg" alt="Display LCD" class="mx-auto rounded-md w-40 h-auto">
+          <h3 class="text-blue-800 font-bold mb-2">Drivers</h3>
+          <p>Permiten controlar la potencia y dirección del motor, facilitando su manejo a través del Arduino y asegurando un funcionamiento estable del prototipo..</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="C:\Users\brimi\OneDrive\Documents\salome\pulsadores.jpeg" alt="Pulsadores" class="mx-auto mb-2 rounded-md">
+          <h3 class="text-blue-800 font-bold mb-2">Pulsadores</h3>
+          <p>Botones para seleccionar el piso y simular el llamado de la cabina desde el exterior e interior del ascensor.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="C:\Users\brimi\OneDrive\Documents\salome\proto.jpeg" alt="Protoboard" class="mx-auto mb-2 rounded-md">
+          <h3 class="text-blue-800 font-bold mb-2">Protoboard</h3>
+          <p>Facilita las conexiones eléctricas entre componentes sin necesidad de soldaduras.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="C:\Users\brimi\OneDrive\Documents\salome\servomotor.jpeg" alt="Fuente de Alimentación" class="mx-auto mb-2 rounded-md">
+          <h3 class="text-blue-800 font-bold mb-2">Servo Motor</h3>
+          <p>Actúa como actuador para abrir y cerrar puertas del ascensor o realizar movimientos de precisión en el prototipo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-6 text-center">
+      <button onclick="showSection('dashboard')" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700">
+        Volver al Inicio
+      </button>
+    </div>
+  </section>
+<!-- Conclusiones -->
+<section id="conclusiones" class="hidden bg-white py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Conclusiones</h2>
+    <p class="text-center mb-4">El proyecto "Ascensor Educativo" permitió a los estudiantes integrar conocimientos de electrónica y programación para diseñar y construir un prototipo funcional que simula un ascensor real.</p>
+    <p class="text-center mb-4">Se logró el objetivo de fomentar el aprendizaje práctico y el trabajo en equipo, desarrollando habilidades técnicas clave y promoviendo la creatividad.  La construcción del prototipo de ascensor permitió a los estudiantes comprender de manera práctica el funcionamiento de los sistemas de transporte vertical, fortaleciendo sus conocimientos técnicos y mecánicos en áreas como electricidad, mecánica y tecnología.</p>
+<p class="text-center mb-4">La construcción del prototipo de ascensor permitió a los estudiantes comprender de manera práctica el funcionamiento de los sistemas de transporte vertical, fortaleciendo sus conocimientos técnicos y mecánicos en áreas como electricidad, mecánica y tecnología.</p>
+    <div class="mt-6 text-center">
+
+    <div class="mt-6 text-center">
+      <button onclick="showSection('dashboard')" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700">
+        Volver al Inicio
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Recomendaciones -->
+<section id="recomendaciones" class="hidden bg-white py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Recomendaciones</h2>
+    <p class="text-center mb-4">Se recomienda continuar con la mejora del prototipo, implementando sensores de seguridad y un sistema de control más robusto para simular el funcionamiento real de un ascensor moderno.</p>
+    <p class="text-center mb-4">Realizar gestiones con las autoridades educativas. Padres de familia y estudiantes para implementar un plan de mantenimiento preventivo y correctivo de los ascensores existentes en la institución, con el fin de garantizar su seguridad y prolongar su vida útil.</p>
+   <p class="text-center mb-4">Utilizar en los ascensores reales materiales y componentes de calidad industrial, como motores eléctricos de tracción, sistemas de control de piso, cabinas metálicas, sistemas de freno de emergencia, sensores de seguridad y alarmas, para asegurar un servicio confiable y seguro..</p>
+
+    <div class="mt-6 text-center">
+      <button onclick="showSection('dashboard')" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700">
+        Volver al Inicio
+      </button>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-6">
+    &copy; 2025 Proyecto Ascensor Educativo | Unidad Educativa “Simón Bolívar”
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+    showSection('dashboard');
+  </script>
+
+</body>
+</html>
